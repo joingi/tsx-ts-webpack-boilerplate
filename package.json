@@ -1,33 +1,33 @@
 {
-  "name": "webpack-boilerplates",
+  "name": "tsx-ts-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "react typescript webpack boilerplate",
   "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server -d --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
+  "dependencies": {
+    "lodash": "^4.17.20"
   },
-  "keywords": [],
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^5.0.0-alpha.7",
+    "ts-loader": "^8.0.12",
+    "typescript": "^4.1.3",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.7.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joingi/tsx-ts-webpack-boilerplate.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "bootstrap": "^4.3.1",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^4.3.0",
-    "file-loader": "^6.1.1",
-    "html-loader": "^1.3.2",
-    "html-webpack-plugin": "^4.5.0",
-    "jquery": "^3.3.1",
-    "mini-css-extract-plugin": "^1.0.0",
-    "node-sass": "^4.14.1",
-    "optimize-css-assets-webpack-plugin": "^5.0.4",
-    "popper.js": "^1.14.7",
-    "sass": "^1.27.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^2.0.0",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.2.0"
-  }
+  "bugs": {
+    "url": "https://github.com/joingi/tsx-ts-webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/joingi/tsx-ts-webpack-boilerplate#readme"
 }
